@@ -1,1 +1,24 @@
+##这里是WIFI CALLING(VoWIFI)的相关规则##
 
+#全球运营商走 Wi-Fi Calling 通用的域名，请将mnc000.mcc000替换成正确的编号
+#可在https://mcc-mnc-list.com/list查询
+#epdg.epc.mnc000.mcc000.pub.3gppnetwork.org
+#ss.epdg.epc.mnc000.mcc000.pub.3gppnetwork.org
+#ss.epdg.epc.geo.mnc000.mcc000.pub.3gppnetwork.org
+#通用的部分，直接对比后缀域名
+DOMAIN-SUFFIX,3gppnetwork.org
+
+#美国AT&A
+epdg.epc.att.net
+sentitlement2.mobile.att.net
+vmm.mobile.att.net
+mmsc.mobile.att.net
+
+#美国Verizon
+wo.vzwwo.com
+sg.vzwfemto.com
+
+#美国T-Mobile
+#epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+#ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+#ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org
