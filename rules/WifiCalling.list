@@ -9,16 +9,16 @@
 DOMAIN-SUFFIX,3gppnetwork.org
 
 #美国AT&A
-epdg.epc.att.net
-sentitlement2.mobile.att.net
-vmm.mobile.att.net
-mmsc.mobile.att.net
+DOMAIN,epdg.epc.att.net
+DOMAIN,sentitlement2.mobile.att.net
+DOMAIN,vmm.mobile.att.net
+DOMAIN,mmsc.mobile.att.net
 
 #美国Verizon
-wo.vzwwo.com
-sg.vzwfemto.com
+DOMAIN,wo.vzwwo.com
+DOMAIN,sg.vzwfemto.com
 
 #美国T-Mobile
-#epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
-#ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
-#ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org
+#DOMAIN,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+#DOMAIN,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+#DOMAIN,ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org
