@@ -1,1 +1,284 @@
+proxy-groups:
+  - name: ♻️ 自动选择
+    icon: https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/Urltest.png
+    type: url-test
+	interval: 300
+	include-all: true
+	exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|(^(.*([2-9]|1[1-9]|[1-9]\.[0-9]+)(倍|x|X|✕|✖|⨉)|(倍|x|X|✕|✖|⨉)([2-9]|1[0-9]|[1-9]\.[0-9]+)).*$)
+  - name: 👆 手动选择
+    icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
+    type: select
+	include-all: true
+	exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
+  - name: 🚀 代理节点
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
+    type: select
+    proxies:
+      - ♻️ 自动选择
+	  - 👆 手动选择
+	  - DIRECT
+  - name: 📶📞 VoWiFi
+    type: select
+    proxies:
+      - 🚀 代理节点
+	  - DIRECT
+  - name: 🎯 直连节点
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
+    type: select
+	include-all: true
+    proxies:
+	  - DIRECT
+      - ♻️ 自动选择
+	  - 👆 手动选择
+  - name: 🛑 过滤黑名单
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/AdBlack.png
+    type: select
+    proxies:
+	  - REJEC
+	  - DIRECT
+      - ♻️ 自动选择
+	  - 👆 手动选择
+  - name: 🚀 国外娱乐
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
+    type: select
+	include-all: true
+    proxies:
+      - ♻️ 自动选择
+	  - 👆 手动选择
+	  - DIRECT
+  - name: 🇭🇰 香港节点
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png
+    include-all: true
+    filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 🇯🇵 日本节点
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Japan.png
+    include-all: true
+    filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 🇺s 美国节点
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png
+    include-all: true
+    filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: ᴛᴡ 台湾节点
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Taiwan.png
+    include-all: true
+    filter: (?i)台|新北|彰化|TW|Taiwan
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 🇸🇬 狮城节点
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Singapore.png
+    include-all: true
+    filter: (?i)新加坡|坡|狮城|SG|Singapore
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 🇰🇷 韩国节点
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Korea.png
+    include-all: true
+    filter: (?i)KR|Korea|KOR|首尔|韩|韓
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 🐟 漏网之鱼
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
+    type: select
+	include-all: true
+    proxies:
+	  - DIRECT
+      - 🚀 代理节点
+	  
 
+
+rule-providers:
+  PersonalDirect:
+    url: https://raw.githubusercontent.com/lilith-rong/PrivateClashRules/main/rules/PrivateDirect.list
+    path: ./ruleset/PersonalDirect.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  PersonalProxy:
+    url: https://raw.githubusercontent.com/lilith-rong/PrivateClashRules/main/rules/PrivateProxy.list
+    path: ./ruleset/PrivateProxy.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  VoWiFi:
+    url: https://raw.githubusercontent.com/lilith-rong/PrivateClashRules/main/rules/WifiCalling.list
+    path: ./ruleset/VoWiFi.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  LocalAreaNetwork:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list
+    path: ./ruleset/LocalAreaNetwork.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  UnBan:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/UnBan.list
+    path: ./ruleset/UnBan.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  BanAD:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanAD.list
+    path: ./ruleset/BanAD.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  BanProgramAD:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanProgramAD.list
+    path: ./ruleset/BanProgramAD.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Adblock4limbo:
+    url: https://limbopro.com/Adblock4limbo.list
+    path: ./ruleset/Adblock4limbo
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  anti-ad-surge:
+    url: https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-surge.txt
+    path: ./ruleset/anti-ad-surge
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  ProxyMedia:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyMedia.list
+    path: ./ruleset/ProxyMedia.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  ProxyGFWlist:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyGFWlist.list
+    path: ./ruleset/ProxyGFWlist.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  ChinaDomain:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaDomain.list
+    path: ./ruleset/ChinaDomain.list
+    behavior: domain
+    interval: 86400
+    format: text
+    type: http
+  ChinaCompanyIp:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaCompanyIp.list
+    path: ./ruleset/ChinaCompanyIp.list
+    behavior: ipcidr
+    interval: 86400
+    format: text
+    type: http
+  Download:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Download.list
+    path: ./ruleset/Download.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+
+rules:
+  - "RULE-SET,PersonalDirect,🎯 直连节点"
+  - "RULE-SET,PersonalProxy,🚀 代理节点"
+  - "RULE-SET,VoWiFi,📶📞 VoWiFi"
+  - "RULE-SET,LocalAreaNetwork,🎯 直连节点"
+  - "RULE-SET,UnBan,🎯 直连节点"
+  - "RULE-SET,BanAD,🛑 过滤黑名单"
+  - "RULE-SET,BanProgramAD,🛑 过滤黑名单"
+  - "RULE-SET,Adblock4limbo,🛑 过滤黑名单"
+  - "RULE-SET,anti-ad-surge,🛑 过滤黑名单"
+  - "RULE-SET,ProxyMedia,🚀 国外娱乐"
+  - "RULE-SET,ProxyGFWlist,🚀 代理节点"
+  - "RULE-SET,ChinaDomain,🎯 直连节点"
+  - "RULE-SET,ChinaCompanyIp,🎯 直连节点"
+  - "RULE-SET,Download,🎯 直连节点"
+  - "MATCH,🐟 漏网之鱼"
+
+
+dns!:
+  enable: true
+  ipv6: true
+  prefer-h3: true
+  listen: 0.0.0.0:8553
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+      - 'dns.msftncsi.com'
+      - 'www.msftncsi.com'
+      - 'www.msftconnecttest.com'
+  use-system-hosts: false
+  default-nameserver:
+    - https://1.1.1.1/dns-query
+    - https://1.0.0.1/dns-query
+    - https://9.9.9.9/dns-query
+    - https://8.8.8.8/dns-query
+    - https://101.101.101.101/dns-query
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    - https://doh.apad.pro/dns-query
+    - 114.114.114.114
+    - 168.95.1.1
+    - 101.101.101.101
+    - 202.175.3.8
+  proxy-server-nameserver:
+    - https://dns.cloudflare.com/dns-query
+    - https://dns.twnic.tw/dns-query
+    - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
+    - https://doh.opendns.com/dns-query
+    - https://dns.quad9.net/dns-query
+  fallback:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    - https://doh.apad.pro/dns-query
+    - 114.114.114.114
+    - 168.95.1.1
+    - 101.101.101.101
+    - 202.175.3.8
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    
+sniffer!:
+  enable: true
+  override-destination: false
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
+    TLS:
+      ports: [443, 8443]
+    QUIC:
+      ports: [443, 8443]
+    
+tun!:
+  enable: false
+  stack: mixed
+  device: Mihomo
+  auto-route: true
+  auto-detect-interface: true
+  strict-route: false
+  dns-hijack:
+    - any:53
