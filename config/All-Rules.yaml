@@ -26,7 +26,6 @@ proxy-groups:
   - name: 🎯 直连节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
     type: select
-    include-all: true
     proxies:
       - DIRECT
       - ♻️ 自动选择
