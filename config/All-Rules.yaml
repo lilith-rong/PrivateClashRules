@@ -95,6 +95,10 @@ proxy-groups:
     proxies:
       - DIRECT
       - 🚀 代理节点
+  - name: GLOBAL
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
+    include-all: true
+    type: select
 
 
 rule-providers:
