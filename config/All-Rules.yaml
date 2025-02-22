@@ -2,50 +2,50 @@ proxy-groups:
   - name: ♻️ 自动选择
     icon: https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/Urltest.png
     type: url-test
-	interval: 300
-	include-all: true
-	exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|(^(.*([2-9]|1[1-9]|[1-9]\.[0-9]+)(倍|x|X|✕|✖|⨉)|(倍|x|X|✕|✖|⨉)([2-9]|1[0-9]|[1-9]\.[0-9]+)).*$)
+    interval: 300
+    include-all: true
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|(^(.*([2-9]|1[1-9]|[1-9]\.[0-9]+)(倍|x|X|✕|✖|⨉)|(倍|x|X|✕|✖|⨉)([2-9]|1[0-9]|[1-9]\.[0-9]+)).*$)
   - name: 👆 手动选择
     icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
     type: select
-	include-all: true
-	exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
+    include-all: true
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置
   - name: 🚀 代理节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
     type: select
     proxies:
       - ♻️ 自动选择
-	  - 👆 手动选择
-	  - DIRECT
+      - 👆 手动选择
+     - DIRECT
   - name: 📶📞 VoWiFi
     type: select
     proxies:
       - 🚀 代理节点
-	  - DIRECT
+      - DIRECT
   - name: 🎯 直连节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
     type: select
-	include-all: true
+    include-all: true
     proxies:
-	  - DIRECT
+      - DIRECT
       - ♻️ 自动选择
-	  - 👆 手动选择
+      - 👆 手动选择
   - name: 🛑 过滤黑名单
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/AdBlack.png
     type: select
     proxies:
-	  - REJEC
-	  - DIRECT
+      - REJECT
+      - DIRECT
       - ♻️ 自动选择
-	  - 👆 手动选择
+      - 👆 手动选择
   - name: 🚀 国外娱乐
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
     type: select
-	include-all: true
+    include-all: true
     proxies:
       - ♻️ 自动选择
-	  - 👆 手动选择
-	  - DIRECT
+      - 👆 手动选择
+      - DIRECT
   - name: 🇭🇰 香港节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png
     include-all: true
@@ -91,9 +91,9 @@ proxy-groups:
   - name: 🐟 漏网之鱼
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
     type: select
-	include-all: true
+    include-all: true
     proxies:
-	  - DIRECT
+      - DIRECT
       - 🚀 代理节点
 	  
 
