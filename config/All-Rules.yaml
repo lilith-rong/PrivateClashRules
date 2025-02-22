@@ -340,7 +340,7 @@ rules:
   - "RULE-SET,BanProgramAD,🛑 过滤黑名单"
   - "RULE-SET,Adblock4limbo,🛑 过滤黑名单"
   - "RULE-SET,anti-ad-surge,🛑 过滤黑名单"
-  - GEOSITE,china-list,🎯 直连节点
+  # - GEOSITE,china-list,🎯 直连节点 #莫名其妙的，这一项不存在
   - GEOSITE,cn,🎯 直连节点
   - GEOSITE,tld-cn,🎯 直连节点
   - GEOSITE,google-cn,🎯 直连节点
