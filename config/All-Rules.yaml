@@ -238,13 +238,12 @@ dns!:
     - https://8.8.8.8/dns-query
     - https://101.101.101.101/dns-query
   nameserver:
-    - https://dns.alidns.com/dns-query
-    - https://doh.pub/dns-query
-    - https://doh.apad.pro/dns-query
-    - 114.114.114.114
-    - 168.95.1.1
-    - 101.101.101.101
-    - 202.175.3.8
+    - https://dns.cloudflare.com/dns-query
+    - https://dns.twnic.tw/dns-query
+    - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
+    - https://doh.opendns.com/dns-query
+    - https://dns.quad9.net/dns-query
   proxy-server-nameserver:
     - https://dns.cloudflare.com/dns-query
     - https://dns.twnic.tw/dns-query
@@ -252,6 +251,14 @@ dns!:
     - https://cloudflare-dns.com/dns-query
     - https://doh.opendns.com/dns-query
     - https://dns.quad9.net/dns-query
+  direct-nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    - https://doh.apad.pro/dns-query
+    - 114.114.114.114
+    - 168.95.1.1
+    - 101.101.101.101
+    - 202.175.3.8
   fallback:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
