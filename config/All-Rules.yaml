@@ -1,3 +1,127 @@
+# HTTP/Unix socket API 监听地址，Unix不验证，但是可以nginx反代
+# external-controller: 127.0.0.1:9090
+external-controller-unix: ./Web/mihomo.sock
+# API访问密钥
+secret: "j7CByGr9fTgZoRMzyNPAsQSq6CtjWacyGeMHqn2Vx9NRjn3EQdDUsSFhfQG84wgc"
+# 外部用户界面
+external-ui: ./Web/WebUI
+# 自动下载
+external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip" #从 GitHub Pages 分支获取
+
+# GEO 设置，mode默认为false(mmdb格式)，loader默认为memconservative(小内存)
+# geodata-mode: true
+geodata-loader: standard
+geo-auto-update: true
+geo-update-interval: 24
+geox-url:
+  geoip: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat
+  geosite: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat
+  mmdb: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.metadb
+  asn: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb
+  
+
+# HTTP(S) 和 SOCKS4(A)/SOCKS5 代理服务共用一个端口
+mixed-port: 7890
+# HTTP(S) 代理服务端口
+# port: 7890
+# SOCKS5 代理服务端口
+# socks-port: 7891
+# Linux 和 macOS 的透明代理服务端口 (TCP 和 TProxy UDP 重定向)
+# redir-port: 7892
+# Linux 的透明代理服务端口 (TProxy TCP 和 TProxy UDP)
+# tproxy-port: 7893
+# 设置为 true 以允许来自其他 LAN IP 地址的连接
+allow-lan: false
+# 仅当 `allow-lan` 为 `true` 时有效
+bind-address: '*'
+
+# Clash 路由工作模式
+mode: rule
+
+# 是否解析IPv6地址
+ipv6: true
+
+# 是否让 Clash 去匹配进程，strict为自动
+find-process-mode: strict
+
+# 全局客户端指纹
+global-client-fingerprint:random
+
+dns:
+  enable: true
+  ipv6: true
+  prefer-h3: true
+  listen: 0.0.0.0:8553
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+      - 'dns.msftncsi.com'
+      - 'www.msftncsi.com'
+      - 'www.msftconnecttest.com'
+  use-system-hosts: false
+  default-nameserver:
+    - https://1.1.1.1/dns-query
+    - https://1.0.0.1/dns-query
+    - https://9.9.9.9/dns-query
+    - https://8.8.8.8/dns-query
+    - https://101.101.101.101/dns-query
+  nameserver:
+    - https://dns.cloudflare.com/dns-query
+    - https://dns.twnic.tw/dns-query
+    - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
+    - https://doh.opendns.com/dns-query
+    - https://dns.quad9.net/dns-query
+  proxy-server-nameserver:
+    - https://dns.cloudflare.com/dns-query
+    - https://dns.twnic.tw/dns-query
+    - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
+    - https://doh.opendns.com/dns-query
+    - https://dns.quad9.net/dns-query
+  direct-nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    - https://doh.apad.pro/dns-query
+    - 114.114.114.114
+    - 168.95.1.1
+    - 101.101.101.101
+    - 202.175.3.8
+  fallback:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    - https://doh.apad.pro/dns-query
+    - 114.114.114.114
+    - 168.95.1.1
+    - 101.101.101.101
+    - 202.175.3.8
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    
+sniffer:
+  enable: true
+  override-destination: false
+  sniff:
+    HTTP:
+      ports: [80,8080-8880,2052,2082,2086,2095]
+      override-destination: true
+    TLS:
+      ports: [443,2053,2083,2087,2096,8443]
+    QUIC:
+      ports: [443,2053,2083,2087,2096,8443]
+    
+tun:
+  enable: false
+  stack: mixed
+  device: Mihomo
+  auto-route: true
+  auto-detect-interface: true
+  strict-route: false
+  dns-hijack:
+    - any:53
+
+
 proxy-groups:
   - name: ♻️ 自动选择
     icon: https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/Urltest.png
@@ -202,93 +326,32 @@ rule-providers:
     type: http
 
 rules:
+  # 总得吧GEO用上的吧，在下面插入几个geo的规则
+  # - GEOSITE,google,proxy
+  # - GEOIP,CN,DIRECT
   - "RULE-SET,PersonalDirect,🎯 直连节点"
   - "RULE-SET,PersonalProxy,🚀 代理节点"
   - "RULE-SET,VoWiFi,📶📞 VoWiFi"
   - "RULE-SET,LocalAreaNetwork,🎯 直连节点"
   - "RULE-SET,UnBan,🎯 直连节点"
+  - GEOSITE,category-ads-all,🛑 过滤黑名单
+  - GEOSITE,win-spy,🛑 过滤黑名单
   - "RULE-SET,BanAD,🛑 过滤黑名单"
   - "RULE-SET,BanProgramAD,🛑 过滤黑名单"
   - "RULE-SET,Adblock4limbo,🛑 过滤黑名单"
   - "RULE-SET,anti-ad-surge,🛑 过滤黑名单"
+  - GEOSITE,china-list,🎯 直连节点
+  - GEOSITE,cn,🎯 直连节点
+  - GEOSITE,tld-cn,🎯 直连节点
+  - GEOSITE,google-cn,🎯 直连节点
+  - GEOSITE,apple-cn,🎯 直连节点
+  - GEOSITE,category-games@cn,🎯 直连节点
   - "RULE-SET,ProxyMedia,🚀 国外娱乐"
+  - GEOIP,telegram,🚀 代理节点
+  - GEOSITE,gfw,🚀 代理节点
+  - GEOSITE,geolocation-!cn,🚀 代理节点
   - "RULE-SET,ProxyGFWlist,🚀 代理节点"
   - "RULE-SET,ChinaDomain,🎯 直连节点"
   - "RULE-SET,ChinaCompanyIp,🎯 直连节点"
   - "RULE-SET,Download,🎯 直连节点"
   - "MATCH,🐟 漏网之鱼"
-
-
-dns!:
-  enable: true
-  ipv6: true
-  prefer-h3: true
-  listen: 0.0.0.0:8553
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  fake-ip-filter:
-      - 'dns.msftncsi.com'
-      - 'www.msftncsi.com'
-      - 'www.msftconnecttest.com'
-  use-system-hosts: false
-  default-nameserver:
-    - https://1.1.1.1/dns-query
-    - https://1.0.0.1/dns-query
-    - https://9.9.9.9/dns-query
-    - https://8.8.8.8/dns-query
-    - https://101.101.101.101/dns-query
-  nameserver:
-    - https://dns.cloudflare.com/dns-query
-    - https://dns.twnic.tw/dns-query
-    - https://dns.google/dns-query
-    - https://cloudflare-dns.com/dns-query
-    - https://doh.opendns.com/dns-query
-    - https://dns.quad9.net/dns-query
-  proxy-server-nameserver:
-    - https://dns.cloudflare.com/dns-query
-    - https://dns.twnic.tw/dns-query
-    - https://dns.google/dns-query
-    - https://cloudflare-dns.com/dns-query
-    - https://doh.opendns.com/dns-query
-    - https://dns.quad9.net/dns-query
-  direct-nameserver:
-    - https://dns.alidns.com/dns-query
-    - https://doh.pub/dns-query
-    - https://doh.apad.pro/dns-query
-    - 114.114.114.114
-    - 168.95.1.1
-    - 101.101.101.101
-    - 202.175.3.8
-  fallback:
-    - https://dns.alidns.com/dns-query
-    - https://doh.pub/dns-query
-    - https://doh.apad.pro/dns-query
-    - 114.114.114.114
-    - 168.95.1.1
-    - 101.101.101.101
-    - 202.175.3.8
-  fallback-filter:
-    geoip: true
-    geoip-code: CN
-    
-sniffer!:
-  enable: true
-  override-destination: false
-  sniff:
-    HTTP:
-      ports: [80, 8080-8880]
-      override-destination: true
-    TLS:
-      ports: [443, 8443]
-    QUIC:
-      ports: [443, 8443]
-    
-tun!:
-  enable: false
-  stack: mixed
-  device: Mihomo
-  auto-route: true
-  auto-detect-interface: true
-  strict-route: false
-  dns-hijack:
-    - any:53
