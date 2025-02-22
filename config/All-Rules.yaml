@@ -95,7 +95,6 @@ proxy-groups:
     proxies:
       - DIRECT
       - 🚀 代理节点
-	  
 
 
 rule-providers:
