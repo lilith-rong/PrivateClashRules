@@ -19,6 +19,7 @@ proxy-groups:
       - DIRECT
   - name: 📶📞 VoWiFi
     type: select
+    include-all: true
     proxies:
       - 🚀 代理节点
       - DIRECT
