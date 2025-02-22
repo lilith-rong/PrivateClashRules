@@ -45,7 +45,7 @@ ipv6: true
 find-process-mode: strict
 
 # 全局客户端指纹
-global-client-fingerprint:random
+global-client-fingerprint: random
 
 dns:
   enable: true
