@@ -349,22 +349,22 @@ rules:
   - "RULE-SET,VoWiFi,📶📞 VoWiFi"
   - "RULE-SET,LocalAreaNetwork,🎯 直连节点"
   - "RULE-SET,UnBan,🎯 直连节点"
-  - GEOSITE,category-ads-all,🛑 过滤黑名单
-  - GEOSITE,win-spy,🛑 过滤黑名单
+  - "GEOSITE,category-ads-all,🛑 过滤黑名单"
+  - "GEOSITE,win-spy,🛑 过滤黑名单"
   - "RULE-SET,BanAD,🛑 过滤黑名单"
   - "RULE-SET,BanProgramAD,🛑 过滤黑名单"
   - "RULE-SET,Adblock4limbo,🛑 过滤黑名单"
   - "RULE-SET,anti-ad-surge,🛑 过滤黑名单"
-  # - GEOSITE,china-list,🎯 直连节点 #莫名其妙的，这一项不存在
-  - GEOSITE,cn,🎯 直连节点
-  - GEOSITE,tld-cn,🎯 直连节点
-  - GEOSITE,google-cn,🎯 直连节点
-  - GEOSITE,apple-cn,🎯 直连节点
-  - GEOSITE,category-games@cn,🎯 直连节点
+  # - "GEOSITE,china-list,🎯 直连节点" #莫名其妙的，这一项不存在
+  - "GEOSITE,cn,🎯 直连节点"
+  - "GEOSITE,tld-cn,🎯 直连节点"
+  - "GEOSITE,google-cn,🎯 直连节点"
+  - "GEOSITE,apple-cn,🎯 直连节点"
+  - "GEOSITE,category-games@cn,🎯 直连节点"
   - "RULE-SET,ProxyMedia,🚀 国外娱乐"
-  - GEOIP,telegram,🚀 代理节点
-  - GEOSITE,gfw,🚀 代理节点
-  - GEOSITE,geolocation-!cn,🚀 代理节点
+  - "GEOIP,telegram,🚀 代理节点"
+  - "GEOSITE,gfw,🚀 代理节点"
+  - "GEOSITE,geolocation-!cn,🚀 代理节点"
   - "RULE-SET,ProxyGFWlist,🚀 代理节点"
   - "RULE-SET,ChinaDomain,🎯 直连节点"
   - "RULE-SET,ChinaCompanyIp,🎯 直连节点"
