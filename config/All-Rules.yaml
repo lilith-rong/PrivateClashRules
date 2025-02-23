@@ -167,6 +167,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
+      - 🚀 代理节点
       - ♻️ 自动选择
       - 👆 手动选择
   - name: 🛑 过滤黑名单
@@ -175,6 +176,7 @@ proxy-groups:
     proxies:
       - REJECT
       - DIRECT
+      - 🚀 代理节点
       - ♻️ 自动选择
       - 👆 手动选择
   - name: 🚀 国外娱乐
@@ -182,6 +184,7 @@ proxy-groups:
     type: select
     include-all: true
     proxies:
+      - 🚀 代理节点
       - ♻️ 自动选择
       - 👆 手动选择
       - DIRECT
@@ -234,10 +237,18 @@ proxy-groups:
     proxies:
       - DIRECT
       - 🚀 代理节点
+      - ♻️ 自动选择
+      - 👆 手动选择
   - name: GLOBAL
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
     include-all: true
     type: select
+    proxies:
+      - DIRECT
+      - 🚀 代理节点
+      - ♻️ 自动选择
+      - 👆 手动选择
+
 
 
 rule-providers:
