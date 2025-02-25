@@ -143,7 +143,7 @@ proxy-groups:
     type: url-test
     interval: 300
     include-all: true
-    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|(^(.*([2-9]|1[1-9]|[1-9]\.[0-9]+)(倍|x|X|✕|✖|⨉)|(倍|x|X|✕|✖|⨉)([2-9]|1[0-9]|[1-9]\.[0-9]+)).*$)
+    exclude-filter: (?i)GB|Traffic|Expire|Premium|频道|订阅|ISP|流量|到期|重置|(^(?i)(?:.*?([2-9]|1\d+|[1-9]\.\d+)(倍|[x✕✖⨉])|.*?([x✕✖⨉]|倍)([2-9]|1\d+|[1-9]\.\d+)|.*?倍率[:：]?\s*([1-9]\d*|\d+\.\d+)).*$)
   - name: 👆 手动选择
     icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
     type: select
