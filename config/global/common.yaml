@@ -1,0 +1,48 @@
+# HTTP/Unix socket API 监听地址，Unix不验证，但是可以nginx反代
+# external-controller: 127.0.0.1:9090
+external-controller-unix: ./Web/mihomo.sock
+# API访问密钥
+secret: "j7CByGr9fTgZoRMzyNPAsQSq6CtjWacyGeMHqn2Vx9NRjn3EQdDUsSFhfQG84wgc"
+# 外部用户界面
+external-ui: ./Web/WebUI
+# 自动下载
+external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip" #从 GitHub Pages 分支获取
+
+# GEO 设置，mode默认为false(mmdb格式)，loader默认为memconservative(小内存)
+# geodata-mode: true
+geodata-loader: standard
+geo-auto-update: true
+geo-update-interval: 24
+geox-url:
+  geoip: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat
+  geosite: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat
+  mmdb: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.metadb
+  asn: https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb
+  
+
+# HTTP(S) 和 SOCKS4(A)/SOCKS5 代理服务共用一个端口
+mixed-port: 7890
+# HTTP(S) 代理服务端口
+# port: 7890
+# SOCKS5 代理服务端口
+# socks-port: 7891
+# Linux 和 macOS 的透明代理服务端口 (TCP 和 TProxy UDP 重定向)
+# redir-port: 7892
+# Linux 的透明代理服务端口 (TProxy TCP 和 TProxy UDP)
+# tproxy-port: 7893
+# 设置为 true 以允许来自其他 LAN IP 地址的连接
+allow-lan: false
+# 仅当 `allow-lan` 为 `true` 时有效
+bind-address: '*'
+
+# Clash 路由工作模式
+mode: rule
+
+# 是否解析IPv6地址
+ipv6: true
+
+# 是否让 Clash 去匹配进程，strict为自动
+find-process-mode: strict
+
+# 全局客户端指纹
+global-client-fingerprint: random
