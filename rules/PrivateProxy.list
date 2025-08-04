@@ -11,3 +11,5 @@ DOMAIN-SUFFIX,kimochi.info
 DOMAIN-SUFFIX,sbdm.net
 # 数字居民
 DOMAIN-SUFFIX,shuzijumin.com
+# Android pif generation
+DOMAIN,developer.android.com
