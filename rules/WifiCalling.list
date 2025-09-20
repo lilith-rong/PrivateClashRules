@@ -6,7 +6,6 @@ DOMAIN,hhk.prod.ondemandconnectivity.com
 DOMAIN,epdg.epc.mnc000.mcc454.pub.3gppnetwork.org
 DOMAIN,ss.epdg.epc.mnc000.mcc454.pub.3gppnetwork.org
 DOMAIN,ss.epdg.epc.geo.mnc000.mcc454.pub.3gppnetwork.org
-DOMAIN,gspe1-ssl.ls.apple.com
 
 # 英国 giffgaff
 IP-CIDR,87.194.0.0/19,UK
@@ -19,16 +18,16 @@ DOMAIN,sentitlement2.mobile.att.net
 DOMAIN,vmm.mobile.att.net
 DOMAIN,mmsc.mobile.att.net
 
-#美国Verizon
+# 美国Verizon
 DOMAIN,wo.vzwwo.com
 DOMAIN,sg.vzwfemto.com
 
-#美国T-Mobile
-#DOMAIN,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
-#DOMAIN,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
-#DOMAIN,ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org
+# 美国T-Mobile
+DOMAIN,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+DOMAIN,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+DOMAIN,ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org
 
-#美国Helium
+# 美国Helium
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,magic.link
 DOMAIN-SUFFIX,hellohelium.com
@@ -38,10 +37,9 @@ DOMAIN-SUFFIX,appsflyersdk.com
 DOMAIN-SUFFIX,appcenter.ms
 
 
-#全球运营商走 Wi-Fi Calling 通用的域名，请将mnc000.mcc000替换成正确的编号
+# 全球运营商走 Wi-Fi Calling 通用的域名，请将mnc000.mcc000替换成正确的编号
 #可在https://mcc-mnc-list.com/list查询
-#epdg.epc.mnc000.mcc000.pub.3gppnetwork.org
-#ss.epdg.epc.mnc000.mcc000.pub.3gppnetwork.org
-#ss.epdg.epc.geo.mnc000.mcc000.pub.3gppnetwork.org
-#通用的部分，直接对比后缀域名
+# 通用的部分，直接对比后缀域名
 DOMAIN-SUFFIX,3gppnetwork.org
+# 苹果定位的域名
+domain:gspe1-ssl.ls.apple.com
