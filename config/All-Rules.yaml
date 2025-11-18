@@ -217,6 +217,10 @@ proxy-groups:
     type: url-test
     interval: 300
     tolerance: 50
+    proxies:
+      - ♻️ 自动选择
+      - 👆 手动选择
+      - DIRECT
   - name: 🇯🇵 日本节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Japan.png
     include-all: true
@@ -224,6 +228,10 @@ proxy-groups:
     type: url-test
     interval: 300
     tolerance: 50
+    proxies:
+      - ♻️ 自动选择
+      - 👆 手动选择
+      - DIRECT
   - name: 🇺🇸 美国节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png
     include-all: true
@@ -231,6 +239,10 @@ proxy-groups:
     type: url-test
     interval: 300
     tolerance: 50
+    proxies:
+      - ♻️ 自动选择
+      - 👆 手动选择
+      - DIRECT
   - name: 🇹🇼 台湾节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Taiwan.png
     include-all: true
@@ -238,6 +250,10 @@ proxy-groups:
     type: url-test
     interval: 300
     tolerance: 50
+    proxies:
+      - ♻️ 自动选择
+      - 👆 手动选择
+      - DIRECT
   - name: 🇸🇬 狮城节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Singapore.png
     include-all: true
@@ -245,6 +261,10 @@ proxy-groups:
     type: url-test
     interval: 300
     tolerance: 50
+    proxies:
+      - ♻️ 自动选择
+      - 👆 手动选择
+      - DIRECT
   - name: 🇬🇧 英国节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/UK.png
     include-all: true
@@ -252,6 +272,10 @@ proxy-groups:
     type: url-test
     interval: 300
     tolerance: 50
+    proxies:
+      - ♻️ 自动选择
+      - 👆 手动选择
+      - DIRECT
   - name: 🇰🇷 韩国节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Korea.png
     include-all: true
@@ -259,6 +283,10 @@ proxy-groups:
     type: url-test
     interval: 300
     tolerance: 50
+    proxies:
+      - ♻️ 自动选择
+      - 👆 手动选择
+      - DIRECT
   - name: 📶📞 VoWiFi
     type: select
     include-all: true
