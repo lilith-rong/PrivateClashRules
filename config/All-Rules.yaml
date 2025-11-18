@@ -192,20 +192,6 @@ proxy-groups:
       - ♻️ 自动选择
       - 👆 手动选择
       - DIRECT
-  - name: 📶📞 VoWiFi
-    type: select
-    include-all: true
-    proxies:
-      - 🚀 代理节点
-      - DIRECT
-  - name: 🎯 直连节点
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
-    type: select
-    proxies:
-      - DIRECT
-      - 🚀 代理节点
-      - ♻️ 自动选择
-      - 👆 手动选择
   - name: 🛑 过滤黑名单
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/AdBlack.png
     type: select
@@ -259,6 +245,13 @@ proxy-groups:
     type: url-test
     interval: 300
     tolerance: 50
+  - name: 🇬🇧 英国节点
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/UK.png
+    include-all: true
+    filter: (?i)UK|Britain|英国|伦敦
+    type: url-test
+    interval: 300
+    tolerance: 50
   - name: 🇰🇷 韩国节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Korea.png
     include-all: true
@@ -266,6 +259,20 @@ proxy-groups:
     type: url-test
     interval: 300
     tolerance: 50
+  - name: 📶📞 VoWiFi
+    type: select
+    include-all: true
+    proxies:
+      - 🚀 代理节点
+      - DIRECT
+  - name: 🎯 直连节点
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 代理节点
+      - ♻️ 自动选择
+      - 👆 手动选择
   - name: 🐟 漏网之鱼
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
     type: select
@@ -298,6 +305,41 @@ rule-providers:
   PersonalProxy:
     url: https://raw.githubusercontent.com/lilith-rong/PrivateClashRules/main/rules/PrivateProxy.list
     path: ./ruleset/PrivateProxy.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  PersonalUS:
+    url: https://raw.githubusercontent.com/lilith-rong/PrivateClashRules/main/rules/PersonalUS.list
+    path: ./ruleset/PersonalUS.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  PersonalUK:
+    url: https://raw.githubusercontent.com/lilith-rong/PrivateClashRules/main/rules/PersonalUK.list
+    path: ./ruleset/PersonalUK.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  PersonalTW:
+    url: https://raw.githubusercontent.com/lilith-rong/PrivateClashRules/main/rules/PersonalTW.list
+    path: ./ruleset/PersonalTW.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  PersonalHK:
+    url: https://raw.githubusercontent.com/lilith-rong/PrivateClashRules/main/rules/PersonalHK.list
+    path: ./ruleset/PersonalHK.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  PersonalJP:
+    url: https://raw.githubusercontent.com/lilith-rong/PrivateClashRules/main/rules/PersonalJP.list
+    path: ./ruleset/PersonalJP.list
     behavior: classical
     interval: 86400
     format: text
@@ -393,7 +435,6 @@ rules:
   # - GEOIP,CN,DIRECT
   - "RULE-SET,PersonalDirect,🎯 直连节点"
   - "RULE-SET,PersonalProxy,🚀 代理节点"
-  - "RULE-SET,VoWiFi,📶📞 VoWiFi"
   - "RULE-SET,LocalAreaNetwork,🎯 直连节点"
   - "RULE-SET,UnBan,🎯 直连节点"
   - "GEOSITE,category-ads-all,🛑 过滤黑名单"
@@ -402,7 +443,12 @@ rules:
   - "RULE-SET,BanProgramAD,🛑 过滤黑名单"
   - "RULE-SET,Adblock4limbo,🛑 过滤黑名单"
   - "RULE-SET,anti-ad-surge,🛑 过滤黑名单"
-  # - "GEOSITE,china-list,🎯 直连节点" #莫名其妙的，这一项不存在
+  - "RULE-SET,PersonalUS,🇺🇸 美国节点"
+  - "RULE-SET,PersonalUK,🇬🇧 英国节点"
+  - "RULE-SET,PersonalTW,🇹🇼 台湾节点"
+  - "RULE-SET,PersonalHK,🇭🇰 香港节点"
+  - "RULE-SET,PersonalJP,🇯🇵 日本节点"
+  - "RULE-SET,VoWiFi,📶📞 VoWiFi"
   - "GEOSITE,cn,🎯 直连节点"
   - "GEOSITE,tld-cn,🎯 直连节点"
   - "GEOSITE,google-cn,🎯 直连节点"

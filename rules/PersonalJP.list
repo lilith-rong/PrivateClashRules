@@ -1,0 +1,33 @@
+# 视频网站
+DOMAIN,abema.io
+DOMAIN,abema.tv
+DOMAIN,akamaized.net
+DOMAIN,ameba.jp
+DOMAIN,hayabusa.io
+DOMAIN,mobile-collector.newrelic.com
+DOMAIN,bucketeer.jp
+DOMAIN,abema.adx.promo
+DOMAIN,hayabusa.media
+DOMAIN,line.me
+DOMAIN,never.jp
+DOMAIN,line-app.com
+DOMAIN,dmm.com
+DOMAIN,dmm.co.jp
+DOMAIN,dmm-extension.com
+DOMAIN,dmmapis.com
+DOMAIN,api-p.videomarket.jp
+DOMAIN,dmm-extension.com
+DOMAIN,videomarket.jp
+DOMAIN,p-smith.com
+DOMAIN,img.vm-movie.jp
+DOMAIN,bam.nr-data.net
+# 游戏网站
+DOMAIN,chaos-r.com
+DOMAIN,getchu.com
+DOMAIN,dmm.co.jp
+DOMAIN,dmm.com
+DOMAIN,toranoana.co.jp
+DOMAIN,melonbooks.co.jp
+DOMAIN,sofmap.com
+DOMAIN,mandarake.co.jp
+DOMAIN,suruga-ya.jp
