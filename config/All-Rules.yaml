@@ -110,12 +110,19 @@ dns:
       - 'www.msftncsi.com'
       - 'www.msftconnecttest.com'
   use-system-hosts: false
+  # 默认 DNS, 用于解析 DNS 服务器 的域名
   default-nameserver:
+    - 1.1.1.1
+    - 119.29.29.29
+    - 117.50.11.11
+    - 202.55.11.100
+    - 114.114.114.114
     - https://1.1.1.1/dns-query
     - https://1.0.0.1/dns-query
     - https://9.9.9.9/dns-query
     - https://8.8.8.8/dns-query
     - https://101.101.101.101/dns-query
+  # 默认的域名解析服务器
   nameserver:
     - https://dns.cloudflare.com/dns-query
     - https://dns.twnic.tw/dns-query
@@ -123,6 +130,7 @@ dns:
     - https://cloudflare-dns.com/dns-query
     - https://doh.opendns.com/dns-query
     - https://dns.quad9.net/dns-query
+  # 代理节点域名解析服务器，仅用于解析代理节点的域名，如果不填则遵循 nameserver-policy、nameserver 和 fallback 的配置
   proxy-server-nameserver:
     - https://dns.cloudflare.com/dns-query
     - https://dns.twnic.tw/dns-query
@@ -130,19 +138,20 @@ dns:
     - https://cloudflare-dns.com/dns-query
     - https://doh.opendns.com/dns-query
     - https://dns.quad9.net/dns-query
+  # 用于 direct 出口域名解析的 DNS 服务器，如果不填则遵循 nameserver-policy、nameserver 和 fallback 的配置
   direct-nameserver:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
     - https://doh.apad.pro/dns-query
-    - 114.114.114.114
     - 168.95.1.1
     - 101.101.101.101
     - 202.175.3.8
+  # 后备域名解析服务器，一般情况下使用境外 DNS, 保证结果可信
+  # 配置 fallback后默认启用 fallback-filter,geoip-code为 cn
   fallback:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
     - https://doh.apad.pro/dns-query
-    - 114.114.114.114
     - 168.95.1.1
     - 101.101.101.101
     - 202.175.3.8
