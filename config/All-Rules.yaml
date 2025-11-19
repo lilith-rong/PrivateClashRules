@@ -255,7 +255,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
   - name: 🇬🇧 英国节点
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/UK.png
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_Kingdom.png
     include-all: true
     filter: (?i)UK|Britain|英国|伦敦
     type: url-test
