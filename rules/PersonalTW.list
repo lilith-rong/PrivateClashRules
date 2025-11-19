@@ -1,8 +1,8 @@
 ## 巴哈姆特  ##
-DOMAIN,gamer.com.tw
-DOMAIN,bahamut.com.tw
-DOMAIN,hinet.net
-DOMAIN,fbcdn.net
-DOMAIN,gvt1.com
-DOMAIN,digicert.com
-DOMAIN,viblast.com
+DOMAIN-SUFFIX,gamer.com.tw
+DOMAIN-SUFFIX,bahamut.com.tw
+DOMAIN-SUFFIX,hinet.net
+DOMAIN-SUFFIX,fbcdn.net
+DOMAIN-SUFFIX,gvt1.com
+DOMAIN-SUFFIX,digicert.com
+DOMAIN-SUFFIX,viblast.com

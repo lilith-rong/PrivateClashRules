@@ -2,18 +2,18 @@
 ##   WIFI Calling   ##
 ######################
 # AT&A
-DOMAIN,epdg.epc.att.net
-DOMAIN,sentitlement2.mobile.att.net
-DOMAIN,vmm.mobile.att.net
-DOMAIN,mmsc.mobile.att.net
+DOMAIN-SUFFIX,epdg.epc.att.net
+DOMAIN-SUFFIX,sentitlement2.mobile.att.net
+DOMAIN-SUFFIX,vmm.mobile.att.net
+DOMAIN-SUFFIX,mmsc.mobile.att.net
 # T-Mobile/Ultramobile
 # > 注：1.代理线路需支持UDP 2.最好为美国线路IPLC
 IP-CIDR,66.94.0.0/19,no-resolve
 IP-CIDR,206.29.177.36/32,no-resolve
 IP-CIDR,208.54.0.0/16,no-resolve
 # Verizon
-DOMAIN,wo.vzwwo.com
-DOMAIN,sg.vzwfemto.com
+DOMAIN-SUFFIX,wo.vzwwo.com
+DOMAIN-SUFFIX,sg.vzwfemto.com
 # Wifi Calling
 DOMAIN-SUFFIX,mnc260.mcc310.pub.3gppnetwork.org
 DOMAIN-SUFFIX,mnc240.mcc310.pub.3gppnetwork.org
@@ -46,7 +46,7 @@ IP-CIDR,69.46.75.0/24,no-resolve
 IP-CIDR,205.164.56.0/24,no-resolve
 IP-CIDR,63.251.124.0/24,no-resolve
 IP-CIDR,216.172.154.0/24,no-resolve
-DOMAIN,tello.com
+DOMAIN-SUFFIX,tello.com
 #########
 # Other #
 #########
