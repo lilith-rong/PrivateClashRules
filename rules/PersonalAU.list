@@ -1,10 +1,8 @@
 ######################
 ##   WIFI Calling   ##
 ######################
-# 3HK/CSL/ClubSIM
-DOMAIN-SUFFIX,three.com.hk
-DOMAIN-SUFFIX,mnc000.mcc454.pub.3gppnetwork.org
-DOMAIN-SUFFIX,prod.ondemandconnectivity.com
+# felix/amaysim
+DOMAIN-SUFFIX,mcc505.pub.3gppnetwork.org
 
 ######################
 ####    Other     ####

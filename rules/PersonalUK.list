@@ -1,21 +1,27 @@
-## 英国 ##
-DOMAIN-SUFFIX,mcc234.pub.3gppnetwork.org,UK
+######################
+##   WIFI Calling   ##
+######################
 # giffgaff
-IP-CIDR,87.194.0.0/19,UK
-IP-CIDR,87.194.88.0/23,UK
-DOMAIN-SUFFIX,epdg.epc.mnc010.mcc234.pub.3gppnetwork.org,UK
+IP-CIDR,87.194.0.0/19
+IP-CIDR,87.194.88.0/23
 # 沃达丰
-DOMAIN-SUFFIX, entsrv-uk.vodafone.com
-DOMAIN-SUFFIX, vuk-gto.prod.ondemandconnectivity.com
-IP-CIDR, 88.82.0.0/19
-IP-CIDR, 148.252.160.0/19
+DOMAIN-SUFFIX,entsrv-uk.vodafone.com
+DOMAIN-SUFFIX,vuk-gto.prod.ondemandconnectivity.com
+IP-CIDR,88.82.0.0/19
+IP-CIDR,148.252.160.0/19
 # VOXI
-IP-CIDR, 148.252.160.0/19
-DOMAIN, vfgb.idemia.io
+IP-CIDR,148.252.160.0/19
+DOMAIN,vfgb.idemia.io
 # CMLinkUK EE
-IP-CIDR, 46.68.0.0/17
+IP-CIDR,46.68.0.0/17
 # Giffgaff
-IP-CIDR, 87.194.0.0/16
+IP-CIDR,87.194.0.0/16
 # CTE
-DOMAIN-SUFFIX, ee.co.uk
-IP-CIDR, 31.94.0.0/16
+DOMAIN-SUFFIX,ee.co.uk
+IP-CIDR,31.94.0.0/16
+
+DOMAIN-SUFFIX,mcc234.pub.3gppnetwork.org
+
+######################
+####    Other     ####
+######################

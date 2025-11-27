@@ -1,4 +1,6 @@
-# 视频网站
+######################
+####   视频网站    ####
+######################
 DOMAIN-SUFFIX,abema.io
 DOMAIN-SUFFIX,abema.tv
 DOMAIN-SUFFIX,akamaized.net
@@ -21,7 +23,10 @@ DOMAIN-SUFFIX,videomarket.jp
 DOMAIN-SUFFIX,p-smith.com
 DOMAIN-SUFFIX,img.vm-movie.jp
 DOMAIN-SUFFIX,bam.nr-data.net
-# 游戏网站
+
+######################
+####   游戏网站    ####
+######################
 DOMAIN-SUFFIX,chaos-r.com
 DOMAIN-SUFFIX,getchu.com
 DOMAIN-SUFFIX,dmm.co.jp
@@ -31,3 +36,7 @@ DOMAIN-SUFFIX,melonbooks.co.jp
 DOMAIN-SUFFIX,sofmap.com
 DOMAIN-SUFFIX,mandarake.co.jp
 DOMAIN-SUFFIX,suruga-ya.jp
+
+######################
+####    Other     ####
+######################
