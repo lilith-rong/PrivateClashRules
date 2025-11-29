@@ -106,10 +106,18 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
-      - 'dns.msftncsi.com'
-      - 'www.msftncsi.com'
-      - 'www.msftconnecttest.com'
+    - 'dns.msftncsi.com'
+    - 'www.msftncsi.com'
+    - 'www.msftconnecttest.com'
   use-system-hosts: false
+  # 用于解析特殊域名，指定使用dns服务器来查询相关的域名
+  nameserver-policy:
+    # '+.arpa': '10.0.0.1' 单行示例
+    # 下面是vodafone de的vowifi的启用方式
+    "epdg.epc.mnc002.mcc262.pub.3gppnetwork.org":
+    - 139.7.117.168
+    - 139.7.117.169
+    - 139.7.117.170
   # 默认 DNS, 用于解析 DNS 服务器 的域名
   default-nameserver:
     - 1.1.1.1
