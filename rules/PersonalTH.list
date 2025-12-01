@@ -2,8 +2,12 @@
 ######################
 ##   WIFI Calling   ##
 ######################
-# AIS
+
+# 通用wifi calling(AIS)
 DOMAIN-SUFFIX,mcc520.pub.3gppnetwork.org
+# google rcs
+# DOMAIN,rcs-acs-mcc520.jibe.google.com
+DOMAIN-KEYWORD,mcc520
 
 ######################
 ####    Other     ####

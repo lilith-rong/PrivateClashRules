@@ -6,6 +6,12 @@ DOMAIN-SUFFIX,mnc001.mcc530.pub.3gppnetwork.org
 DOMAIN-SUFFIX,mnc005.mcc530.pub.3gppnetwork.spark.co.nz
 DOMAIN-SUFFIX,epdg.ims.2degrees.net.nz
 
+# 通用wifi calling
+DOMAIN-SUFFIX,mcc530.pub.3gppnetwork.org
+# google rcs
+# DOMAIN,rcs-acs-mcc530.jibe.google.com
+DOMAIN-KEYWORD,mcc530
+
 ######################
 ####    Other     ####
 ######################

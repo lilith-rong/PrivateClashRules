@@ -6,6 +6,12 @@ DOMAIN-SUFFIX,three.com.hk
 DOMAIN-SUFFIX,mnc000.mcc454.pub.3gppnetwork.org
 DOMAIN-SUFFIX,prod.ondemandconnectivity.com
 
+# 通用wifi calling
+DOMAIN-SUFFIX,mcc454.pub.3gppnetwork.org
+# google rcs
+# DOMAIN,rcs-acs-mcc454.jibe.google.com
+DOMAIN-KEYWORD,mcc454
+
 ######################
 ####    Other     ####
 ######################

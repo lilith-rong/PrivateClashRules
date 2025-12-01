@@ -2,8 +2,12 @@
 ######################
 ##   WIFI Calling   ##
 ######################
-# wim
+
+# 通用wifi calling(wim)
 DOMAIN-SUFFIX,mcc334.pub.3gppnetwork.org
+# google rcs
+# DOMAIN,rcs-acs-mcc334.jibe.google.com
+DOMAIN-KEYWORD,mcc334
 
 ######################
 ####    Other     ####

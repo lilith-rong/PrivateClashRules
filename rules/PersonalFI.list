@@ -2,8 +2,12 @@
 ######################
 ##   WIFI Calling   ##
 ######################
-# Elisa
+
+# 通用wifi calling(Elisa)
 DOMAIN-SUFFIX,mcc244.pub.3gppnetwork.org
+# google rcs
+# DOMAIN,rcs-acs-mcc244.jibe.google.com
+DOMAIN-KEYWORD,mcc244
 
 ######################
 ####    Other     ####

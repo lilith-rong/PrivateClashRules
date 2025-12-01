@@ -2,8 +2,12 @@
 ######################
 ##   WIFI Calling   ##
 ######################
-# lifecell
+
+# 通用wifi calling(lifecell)
 DOMAIN-SUFFIX,mcc255.pub.3gppnetwork.org
+# google rcs
+# DOMAIN,rcs-acs-mcc255.jibe.google.com
+DOMAIN-KEYWORD,mcc255
 
 ######################
 ####    Other     ####

@@ -20,7 +20,11 @@ IP-CIDR,87.194.0.0/16
 DOMAIN-SUFFIX,ee.co.uk
 IP-CIDR,31.94.0.0/16
 
+# 通用wifi calling
 DOMAIN-SUFFIX,mcc234.pub.3gppnetwork.org
+# google rcs
+# DOMAIN,rcs-acs-mcc234.jibe.google.com
+DOMAIN-KEYWORD,mcc234
 
 ######################
 ####    Other     ####

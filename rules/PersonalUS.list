@@ -45,8 +45,11 @@ IP-CIDR,63.251.124.0/24,no-resolve
 IP-CIDR,216.172.154.0/24,no-resolve
 DOMAIN-SUFFIX,tello.com
 
-# Wifi Calling
+# 通用wifi calling
 DOMAIN-SUFFIX,mcc310.pub.3gppnetwork.org
+# google rcs
+# DOMAIN,rcs-acs-mcc310.jibe.google.com
+DOMAIN-KEYWORD,mcc310
 
 ######################
 ####    Other     ####

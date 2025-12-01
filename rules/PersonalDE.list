@@ -4,8 +4,11 @@
 #VodafoneDE
 IP-CIDR,139.7.117.0/24
 
-
+# 通用wifi calling(VodafoneDE)
 DOMAIN-SUFFIX,mcc262.pub.3gppnetwork.org
+# google rcs
+# DOMAIN,rcs-acs-mcc262.jibe.google.com
+DOMAIN-KEYWORD,mcc262
 
 ######################
 ####    Other     ####
