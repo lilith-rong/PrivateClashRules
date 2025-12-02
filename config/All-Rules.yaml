@@ -406,6 +406,7 @@ rule-providers:
     behavior: classical
     interval: 86400
     format: text
+    type: http
   PersonalDE:
     url: https://raw.githubusercontent.com/lilith-rong/PrivateClashRules/main/rules/PersonalDE.list
     path: ./ruleset/PersonalDE.list
