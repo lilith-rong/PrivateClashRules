@@ -286,6 +286,48 @@ proxy-groups:
     type: url-test
     interval: 300
     tolerance: 50
+  - name: 🇩🇪 德国节点
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Germany.png
+    include-all: true
+    filter: (?i)DE|Germany|德国|柏林|法兰克福|慕尼黑|杜塞尔多夫|汉堡|斯图加特|莱比锡|科隆
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 🇦🇺 澳大利亚节点
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Australia.png
+    include-all: true
+    filter: (?i)AU|Australia|澳大利亚|悉尼|墨尔本|布里斯班|珀斯|阿德莱德
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 🇳🇿 新西兰节点
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/New_Zealand.png
+    include-all: true
+    filter: (?i)NZ|New Zealand|新西兰|奥克兰|惠灵顿|基督城
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 🇲🇾 马来西亚节点
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Malaysia.png
+    include-all: true
+    filter: (?i)MY|Malaysia|马来西亚|吉隆坡|槟城|柔佛|沙巴
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 🇺🇦 乌克兰节点
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Ukraine.png
+    include-all: true
+    filter: (?i)UA|Ukraine|乌克兰|基辅|哈尔科夫|利沃夫
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: 🇹🇭 泰国节点
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Thailand.png
+    include-all: true
+    filter: (?i)TH|Thailand|泰国|曼谷|清迈|普吉岛
+    type: url-test
+    interval: 300
+    tolerance: 50
   - name: 🎯 直连节点
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Direct.png
     type: select
@@ -519,12 +561,6 @@ rules:
   - "RULE-SET,PersonalTW,🇹🇼 台湾节点"
   - "RULE-SET,PersonalHK,🇭🇰 香港节点"
   - "RULE-SET,PersonalJP,🇯🇵 日本节点"
-  - "RULE-SET,PersonalDE,🇩🇪 德国节点"
-  - "RULE-SET,PersonalAU,🇦🇺 澳大利亚节点"
-  - "RULE-SET,PersonalNZ,🇳🇿 新西兰节点"
-  - "RULE-SET,PersonalMY,🇲🇾 马来西亚节点"
-  - "RULE-SET,PersonalUA,🇺🇦 乌克兰节点"
-  - "RULE-SET,PersonalTH,🇹🇭 泰国节点"
   - "GEOSITE,cn,🎯 直连节点"
   - "GEOSITE,tld-cn,🎯 直连节点"
   - "GEOSITE,google-cn,🎯 直连节点"
