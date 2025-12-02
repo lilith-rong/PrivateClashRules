@@ -241,8 +241,6 @@ proxy-groups:
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
     include-all: true
     filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
-    proxies:
-      - DIRECT
     type: url-test
     interval: 300
     tolerance: 50
@@ -250,8 +248,6 @@ proxy-groups:
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
     include-all: true
     filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
-    proxies:
-      - DIRECT
     type: url-test
     interval: 300
     tolerance: 50
@@ -259,8 +255,6 @@ proxy-groups:
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
     include-all: true
     filter: (?i)美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
-    proxies:
-      - DIRECT
     type: url-test
     interval: 300
     tolerance: 50
@@ -268,8 +262,6 @@ proxy-groups:
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taiwan.png
     include-all: true
     filter: (?i)台|新北|彰化|TW|Taiwan
-    proxies:
-      - DIRECT
     type: url-test
     interval: 300
     tolerance: 50
@@ -277,8 +269,6 @@ proxy-groups:
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
     include-all: true
     filter: (?i)新加坡|坡|狮城|SG|Singapore
-    proxies:
-      - DIRECT
     type: url-test
     interval: 300
     tolerance: 50
@@ -286,8 +276,6 @@ proxy-groups:
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_Kingdom.png
     include-all: true
     filter: (?i)GB|United Kingdom|UK|英国|伦敦|曼彻斯特|伯明翰|爱丁堡|利物浦
-    proxies:
-      - DIRECT
     type: url-test
     interval: 300
     tolerance: 50
@@ -295,62 +283,6 @@ proxy-groups:
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png
     include-all: true
     filter: (?i)KR|Korea|KOR|首尔|韩|韓
-    proxies:
-      - DIRECT
-    type: url-test
-    interval: 300
-    tolerance: 50
-  - name: 🇩🇪 德国节点
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Germany.png
-    include-all: true
-    filter: (?i)DE|Germany|德国|柏林|法兰克福|慕尼黑|杜塞尔多夫|汉堡|斯图加特|莱比锡|科隆
-    proxies:
-      - DIRECT
-    type: url-test
-    interval: 300
-    tolerance: 50
-  - name: 🇦🇺 澳大利亚节点
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Australia.png
-    include-all: true
-    filter: (?i)AU|Australia|澳大利亚|悉尼|墨尔本|布里斯班|珀斯|阿德莱德
-    proxies:
-      - DIRECT
-    type: url-test
-    interval: 300
-    tolerance: 50
-  - name: 🇳🇿 新西兰节点
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/New_Zealand.png
-    include-all: true
-    filter: (?i)NZ|New Zealand|新西兰|奥克兰|惠灵顿|基督城
-    proxies:
-      - DIRECT
-    type: url-test
-    interval: 300
-    tolerance: 50
-  - name: 🇲🇾 马来西亚节点
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Malaysia.png
-    include-all: true
-    filter: (?i)MY|Malaysia|马来西亚|吉隆坡|槟城|柔佛|沙巴
-    proxies:
-      - DIRECT
-    type: url-test
-    interval: 300
-    tolerance: 50
-  - name: 🇺🇦 乌克兰节点
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Ukraine.png
-    include-all: true
-    filter: (?i)UA|Ukraine|乌克兰|基辅|哈尔科夫|利沃夫
-    proxies:
-      - DIRECT
-    type: url-test
-    interval: 300
-    tolerance: 50
-  - name: 🇹🇭 泰国节点
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Thailand.png
-    include-all: true
-    filter: (?i)TH|Thailand|泰国|曼谷|清迈|普吉岛
-    proxies:
-      - DIRECT
     type: url-test
     interval: 300
     tolerance: 50
