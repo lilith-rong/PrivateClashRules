@@ -1,7 +1,7 @@
 ##这里是WIFI CALLING(VoWIFI)的相关规则##
 
 ## 苹果定位的域名 ##
-DOMAIN:gspe1-ssl.ls.apple.com
+DOMAIN,gspe1-ssl.ls.apple.com
 
 # 全球运营商走 Wi-Fi Calling 通用的域名，请将mnc000.mcc000替换成正确的编号
 # 可在https://mcc-mnc-list.com/list查询
