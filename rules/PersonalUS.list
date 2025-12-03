@@ -47,9 +47,15 @@ DOMAIN-SUFFIX,tello.com
 
 # 通用wifi calling
 DOMAIN-SUFFIX,mcc310.pub.3gppnetwork.org
+DOMAIN-SUFFIX,mcc311.pub.3gppnetwork.org
+DOMAIN-SUFFIX,mcc313.pub.3gppnetwork.org
+DOMAIN-SUFFIX,mcc316.pub.3gppnetwork.org
 # google rcs
 # DOMAIN,rcs-acs-mcc310.jibe.google.com
 DOMAIN-KEYWORD,mcc310
+DOMAIN-KEYWORD,mcc311
+DOMAIN-KEYWORD,mcc313
+DOMAIN-KEYWORD,mcc316
 
 ######################
 ####    Other     ####
