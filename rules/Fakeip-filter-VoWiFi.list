@@ -1,0 +1,5 @@
+######################
+### 全局Wifi Calling 不走fakeip
+######################
+
+DOMAIN-SUFFIX,3gppnetwork.org
