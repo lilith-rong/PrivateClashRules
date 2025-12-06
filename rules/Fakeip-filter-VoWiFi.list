@@ -1,10 +1,115 @@
 ######################
-### 全局Wifi Calling 不走fakeip
+### 全局Wifi Calling 不走fakeip , 从每个配置文件当中复制
 ######################
 
-DOMAIN-SUFFIX,3gppnetwork.org
 
-# T-Mobile
+######################
+##     预防性设置     ##
+######################
+DOMAIN-SUFFIX,3gppnetwork.org
+DOMAIN-SUFFIX,ims
+# ims.*
+# *.ims
+######################
+##     预防性设置     ##
+######################
+
+######################
+##      美   国      ##
+######################
+# AT&A
+DOMAIN-SUFFIX,epdg.epc.att.net
+DOMAIN-SUFFIX,sentitlement2.mobile.att.net
+DOMAIN-SUFFIX,vmm.mobile.att.net
+DOMAIN-SUFFIX,mmsc.mobile.att.net
+# T-Mobile/Ultramobile/tello
+# > 注：1.代理线路需支持UDP 2.最好为美国线路IPLC
+DOMAIN-SUFFIX,tello.com
 DOMAIN-SUFFIX,t-mobile.com
 DOMAIN-SUFFIX,t-mobile.idemia.io
+IP-CIDR,66.94.0.0/19,no-resolve
+IP-CIDR,206.29.177.36/32,no-resolve
+IP-CIDR,208.54.0.0/16,no-resolve
+# Verizon
+DOMAIN-SUFFIX,wo.vzwwo.com
+DOMAIN-SUFFIX,sg.vzwfemto.com
+DOMAIN-KEYWORD, t-mobile
+DOMAIN-SUFFIX,optimizely.com
+DOMAIN-SUFFIX,redirect.ultra.me
+DOMAIN-SUFFIX,ultramobile.com
+# Helium
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,magic.link
+DOMAIN-SUFFIX,hellohelium.com
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,statuspage.io
+DOMAIN-SUFFIX,appsflyersdk.com
+DOMAIN-SUFFIX,appcenter.ms
+# talkatone
+DOMAIN-SUFFIX,mobilefuse.com
+DOMAIN-SUFFIX,inmobi.com
+DOMAIN-SUFFIX,crashlytics.com
+DOMAIN-SUFFIX,talkatone.com
+DOMAIN-SUFFIX,kochava.com
+DOMAIN-SUFFIX,tktn.be
+DOMAIN-SUFFIX,cohere.com
+DOMAIN-SUFFIX,ip-api.com
+DOMAIN-SUFFIX,agkn.com
+DOMAIN-SUFFIX,tktn.at
+DOMAIN-SUFFIX,inner-active.mobi
+IP-CIDR,50.117.27.0/24,no-resolve
+IP-CIDR,69.46.75.0/24,no-resolve
+IP-CIDR,205.164.56.0/24,no-resolve
+IP-CIDR,63.251.124.0/24,no-resolve
+IP-CIDR,216.172.154.0/24,no-resolve
+DOMAIN-SUFFIX,tello.com
+######################
+##      美   国      ##
+######################
 
+
+
+######################
+##      英   国      ##
+######################
+# giffgaff
+IP-CIDR,87.194.0.0/19
+IP-CIDR,87.194.88.0/23
+# 沃达丰
+DOMAIN-SUFFIX,entsrv-uk.vodafone.com
+DOMAIN-SUFFIX,vuk-gto.prod.ondemandconnectivity.com
+IP-CIDR,88.82.0.0/19
+IP-CIDR,148.252.160.0/19
+# VOXI
+IP-CIDR,148.252.160.0/19
+DOMAIN,vfgb.idemia.io
+# CMLinkUK EE
+IP-CIDR,46.68.0.0/17
+# Giffgaff
+IP-CIDR,87.194.0.0/16
+# CTE
+DOMAIN-SUFFIX,ee.co.uk
+IP-CIDR,31.94.0.0/16
+######################
+##      英   国      ##
+######################
+
+
+######################
+##       新西兰      ##
+######################
+DOMAIN-SUFFIX,mnc005.mcc530.pub.3gppnetwork.spark.co.nz
+DOMAIN-SUFFIX,epdg.ims.2degrees.net.nz
+######################
+##       新西兰      ##
+######################
+
+
+######################
+##      香   港      ##
+######################
+DOMAIN-SUFFIX,three.com.hk
+DOMAIN-SUFFIX,prod.ondemandconnectivity.com
+######################
+##      香   港      ##
+######################

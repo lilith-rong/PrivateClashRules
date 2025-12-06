@@ -5,6 +5,8 @@
 
 # 通用wifi calling(AIS)
 DOMAIN-SUFFIX,mcc520.pub.3gppnetwork.org
+IP-CIDR,119.31.123.0/24,no-resolve
+IP-CIDR,119.31.0.0/17,no-resolve
 # google rcs
 # DOMAIN,rcs-acs-mcc520.jibe.google.com
 DOMAIN-KEYWORD,mcc520

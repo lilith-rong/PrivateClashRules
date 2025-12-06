@@ -8,6 +8,7 @@ external-ui: ./Web/WebUI
 # 自动下载
 external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip" #从 GitHub Pages 分支获取
 
+
 # GEO 设置，mode默认为false(mmdb格式)，loader默认为memconservative(小内存)
 # geodata-mode: true
 geodata-loader: standard
@@ -25,15 +26,30 @@ mixed-port: 7890
 # HTTP(S) 代理服务端口
 # port: 7890
 # SOCKS5 代理服务端口
-# socks-port: 7891
+# socks-port: 7890
 # Linux 和 macOS 的透明代理服务端口 (TCP 和 TProxy UDP 重定向)
-# redir-port: 7892
+redir-port: 7891
 # Linux 的透明代理服务端口 (TProxy TCP 和 TProxy UDP)
-# tproxy-port: 7893
+tproxy-port: 7892
 # 设置为 true 以允许来自其他 LAN IP 地址的连接
 allow-lan: false
 # 仅当 `allow-lan` 为 `true` 时有效
 bind-address: '*'
+# 禁止连接的 IP 地址段，黑名单优先级高于白名单
+lan-disallowed-ips:
+#  - 192.168.0.3/32
+# 允许连接的 IP 地址段
+lan-allowed-ips:
+  - 0.0.0.0/0
+  - ::/0
+# http(s)/socks/mixed代理的用户验证
+authentication:
+#  - "user1:pass1"
+#  - "user2:pass2"
+# 设置允许跳过验证的 IP 段
+skip-auth-prefixes:
+  - 127.0.0.1/8
+  - ::1/128
 
 # Clash 路由工作模式
 mode: rule
@@ -110,7 +126,11 @@ dns:
   fake-ip-filter:
     - geosite:cn
     - rule-set:fakeip-filter-DustinWin
-    - rule-set:fakeip-filter-VoWiFi
+    - rule-set:fakeip-filter-VoWiFi  
+    - "+.pub.3gppnetwork.org"   # ← VoWiFi 必须直连
+    - "ims.*"                   # ← IMS 域名直连
+    - "*.ims"                   # ← 防止运营商自定义域名  
+
   use-system-hosts: false
   # 用于解析特殊域名，指定使用dns服务器来查询相关的域名
   nameserver-policy:
@@ -533,7 +553,7 @@ rule-providers:
     type: http
   # 这个是用在fakip-filter里面的规则集
   fakeip-filter-DustinWin:
-    url: "https://cdn.gh-proxy.org/https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/fakeip-filter.list"
+    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/fakeip-filter.list"
     path: ./ruleset/Fakeip-filter-DustinWin.list
     behavior: classical
     interval: 86400

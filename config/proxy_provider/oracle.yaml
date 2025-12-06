@@ -1,7 +1,0 @@
-proxy-providers:
-  oracle:
-    type: file
-    path: ./oracle.yml
-    interval: 3600
-    overwrite: true
-
