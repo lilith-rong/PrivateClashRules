@@ -3,3 +3,8 @@
 ######################
 
 DOMAIN-SUFFIX,3gppnetwork.org
+
+# T-Mobile
+DOMAIN-SUFFIX,t-mobile.com
+DOMAIN-SUFFIX,t-mobile.idemia.io
+
