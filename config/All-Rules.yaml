@@ -109,10 +109,8 @@ dns:
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
     - geosite:cn
-    - rule-set:fakeip-filter
-    - 'dns.msftncsi.com'
-    - 'www.msftncsi.com'
-    - 'www.msftconnecttest.com'
+    - rule-set:fakeip-filter-DustinWin
+    - rule-set:fakeip-filter-VoWiFi
   use-system-hosts: false
   # 用于解析特殊域名，指定使用dns服务器来查询相关的域名
   nameserver-policy:
@@ -534,12 +532,19 @@ rule-providers:
     format: text
     type: http
   # 这个是用在fakip-filter里面的规则集
-  fakeip-filter:
-    url: "https://cdn.gh-proxy.org/https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/fakeip-filter.mrs"
-    path: ./ruleset/fakeip-filter.mrs
+  fakeip-filter-DustinWin:
+    url: "https://cdn.gh-proxy.org/https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/fakeip-filter.list"
+    path: ./ruleset/Fakeip-filter-DustinWin.list
     behavior: classical
     interval: 86400
-    format: mrs
+    format: text
+    type: http
+  fakeip-filter-VoWiFi:
+    url: "https://raw.githubusercontent.com/lilith-rong/PrivateClashRules/main/rules/Fakeip-filter-VoWiFi.list"
+    path: ./ruleset/Fakeip-filter-VoWiFi.list
+    behavior: classical
+    interval: 86400
+    format: text
     type: http
 
 rules:
