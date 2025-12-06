@@ -231,6 +231,14 @@ proxy-groups:
       - ♻️ 自动选择
       - 👆 手动选择
       - DIRECT
+  - name: 🎯 直连节点
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Direct.png
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 代理节点
+      - ♻️ 自动选择
+      - 👆 手动选择
   - name: 🛑 过滤黑名单
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AdBlack.png
     type: select
@@ -346,14 +354,6 @@ proxy-groups:
     type: url-test
     interval: 300
     tolerance: 50
-  - name: 🎯 直连节点
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Direct.png
-    type: select
-    proxies:
-      - DIRECT
-      - 🚀 代理节点
-      - ♻️ 自动选择
-      - 👆 手动选择
   - name: 🐟 漏网之鱼
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
     type: select
