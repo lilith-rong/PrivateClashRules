@@ -6,18 +6,13 @@ DOMAIN-SUFFIX,oracle.com
 #Cloudflare的网页，有时候代理之后不给访问控制台
 DOMAIN-SUFFIX,cloudflare.com
 # 镜像加速网站
-DOMAIN-SUFFIX,docker.056561.xyz
+DOMAIN-SUFFIX,bkwt.eu.org
+DOMAIN-SUFFIX,056561.xyz
 DOMAIN-SUFFIX,docker.xuanyuan.me
 DOMAIN-SUFFIX,docker.1ms.run
 DOMAIN-SUFFIX,docker.1panel.live
 DOMAIN-SUFFIX,dockerpull.pw
-DOMAIN-SUFFIX,quay.056561.xyz
-DOMAIN-SUFFIX,quay.mirrors.ustc.edu.cn
+DOMAIN-SUFFIX,ustc.edu.cn
 DOMAIN-SUFFIX,quay.aliyun.com
-DOMAIN-SUFFIX,gcr.056561.xyz
-DOMAIN-SUFFIX,gcr.mirrors.ustc.edu.cn
-DOMAIN-SUFFIX,k8s-gcr.056561.xyz
 DOMAIN-SUFFIX,registry.aliyuncs.com
-DOMAIN-SUFFIX,k8s-gcr.mirrors.sjtug.sjtu.edu.cn
-DOMAIN-SUFFIX,ghcr.056561.xyz
-DOMAIN-SUFFIX,ghcr.mirrors.ustc.edu.cn
+DOMAIN-SUFFIX,sjtug.sjtu.edu.cn
