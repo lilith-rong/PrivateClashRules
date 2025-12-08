@@ -131,7 +131,6 @@ dns:
     - "+.pub.3gppnetwork.org"   # ← VoWiFi 必须直连
     - "ims.*"                   # ← IMS 域名直连
     - "*.ims"                   # ← 防止运营商自定义域名  
-
   use-system-hosts: false
   # 用于解析特殊域名，指定使用dns服务器来查询相关的域名
   nameserver-policy:
