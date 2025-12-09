@@ -553,11 +553,11 @@ rule-providers:
     type: http
   # 这个是用在fakip-filter里面的规则集
   fakeip-filter-DustinWin:
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/fakeip-filter.list"
-    path: ./ruleset/Fakeip-filter-DustinWin.list
+    url: "https://cdn.gh-proxy.org/https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/fakeip-filter.mrs"
+    path: ./ruleset/Fakeip-filter-DustinWin.mrs
     behavior: classical
     interval: 86400
-    format: text
+    format: mrs
     type: http
   fakeip-filter-VoWiFi:
     url: "https://raw.githubusercontent.com/lilith-rong/PrivateClashRules/main/rules/Fakeip-filter-VoWiFi.list"
