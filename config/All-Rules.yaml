@@ -190,7 +190,7 @@ dns:
     geoip-code: CN
     
 sniffer:
-  enable: true
+  enable: false
   override-destination: false
   sniff:
     HTTP:
