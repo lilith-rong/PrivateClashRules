@@ -16,10 +16,10 @@ geodata-loader: standard
 geo-auto-update: true
 geo-update-interval: 24
 geox-url:
-  geoip: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat
-  geosite: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat
-  mmdb: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb
-  asn: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/GeoLite2-ASN.mmdb
+  geoip: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat
+  geosite: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat
+  mmdb: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb
+  asn: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/GeoLite2-ASN.mmdb
   
 
 # HTTP(S) 和 SOCKS4(A)/SOCKS5 代理服务共用一个端口
@@ -553,11 +553,11 @@ rule-providers:
     type: http
   # 这个是用在fakip-filter里面的规则集
   fakeip-filter-DustinWin:
-    url: "https://cdn.gh-proxy.org/https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/fakeip-filter.mrs"
+    url: "https://cdn.gh-proxy.org/https://raw.githubusercontent.com/DustinWin/ShellCrash/refs/heads/dev/public/fake_ip_filter.list"
     path: ./ruleset/Fakeip-filter-DustinWin.mrs
     behavior: classical
     interval: 86400
-    format: mrs
+    format: text
     type: http
   fakeip-filter-VoWiFi:
     url: "https://raw.githubusercontent.com/lilith-rong/PrivateClashRules/main/rules/Fakeip-filter-VoWiFi.list"
@@ -583,16 +583,27 @@ rules:
   - "RULE-SET,anti-ad-surge,🛑 过滤黑名单"
   - "RULE-SET,VoWiFi,📶📞 VoWiFi"
   - "RULE-SET,PersonalUS,🇺🇸 美国节点"
+#  - "GEOIP,us,🇺🇸 美国节点"
   - "RULE-SET,PersonalUK,🇬🇧 英国节点"
+#  - "GEOIP,gb,🇬🇧 英国节点"
   - "RULE-SET,PersonalTW,🇹🇼 台湾节点"
+#  - "GEOIP,tw,🇹🇼 台湾节点"
   - "RULE-SET,PersonalHK,🇭🇰 香港节点"
+#  - "GEOIP,hk,🇭🇰 香港节点"
   - "RULE-SET,PersonalJP,🇯🇵 日本节点"
+#  - "GEOIP,jp,🇯🇵 日本节点"
   - "RULE-SET,PersonalDE,🇩🇪 德国节点"
+#  - "GEOIP,de,🇩🇪 德国节点"
   - "RULE-SET,PersonalAU,🇦🇺 澳大利亚节点"
+#  - "GEOIP,au,🇦🇺 澳大利亚节点"
   - "RULE-SET,PersonalNZ,🇳🇿 新西兰节点"
+#  - "GEOIP,nz,🇳🇿 新西兰节点"
   - "RULE-SET,PersonalMY,🇲🇾 马来西亚节点"
+#  - "GEOIP,my,🇲🇾 马来西亚节点"
   - "RULE-SET,PersonalUA,🇺🇦 乌克兰节点"
+#  - "GEOIP,ua,🇺🇦 乌克兰节点"
   - "RULE-SET,PersonalTH,🇹🇭 泰国节点"
+#  - "GEOIP,th,🇹🇭 泰国节点"
   - "GEOSITE,cn,🎯 直连节点"
   - "GEOSITE,tld-cn,🎯 直连节点"
   - "GEOSITE,google-cn,🎯 直连节点"
