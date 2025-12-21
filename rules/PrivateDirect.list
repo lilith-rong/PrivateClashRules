@@ -1,10 +1,12 @@
 ##这里是个人用的需要直连的网址##
-#这个是sharepoint，国内可以直连
+# 这个是sharepoint，国内可以直连
 DOMAIN-SUFFIX,sharepoint.com
-#甲骨文云，用直连看看
+# 甲骨文云，用直连看看
 DOMAIN-SUFFIX,oracle.com
-#Cloudflare的网页，有时候代理之后不给访问控制台
+# Cloudflare的网页，有时候代理之后不给访问控制台
 DOMAIN-SUFFIX,cloudflare.com
+# openwrt.ai软件包
+DOMAIN-SUFFIX,openwrt.ai
 # 镜像加速网站
 DOMAIN-SUFFIX,bkwt.eu.org
 DOMAIN-SUFFIX,056561.xyz
