@@ -239,6 +239,13 @@ proxy-groups:
       - 🚀 代理节点
       - ♻️ 自动选择
       - 👆 手动选择
+  - name: 🏡 回家节点
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Clubhouse_1.png
+    type: select
+    proxies:
+      - DIRECT
+    include-all: true
+    filter: (?i)N3700|家
   - name: 🛑 过滤黑名单
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AdBlack.png
     type: select
@@ -386,6 +393,13 @@ rule-providers:
   PersonalProxy:
     url: https://raw.githubusercontent.com/lilith-rong/PrivateClashRules/main/rules/PrivateProxy.list
     path: ./ruleset/PrivateProxy.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  PersonalHome:
+    url: https://raw.githubusercontent.com/lilith-rong/PrivateClashRules/main/rules/PrivateHome.list
+    path: ./ruleset/PrivateHome.list
     behavior: classical
     interval: 86400
     format: text
@@ -573,6 +587,7 @@ rules:
   # - GEOIP,CN,DIRECT
   - "RULE-SET,PersonalDirect,🎯 直连节点"
   - "RULE-SET,PersonalProxy,🚀 代理节点"
+  - "RULE-SET,PersonalHome,🏡 回家节点"
   - "RULE-SET,LocalAreaNetwork,🎯 直连节点"
   - "RULE-SET,UnBan,🎯 直连节点"
   - "GEOSITE,category-ads-all,🛑 过滤黑名单"

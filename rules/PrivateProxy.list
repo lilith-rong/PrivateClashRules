@@ -1,8 +1,6 @@
 ##这里是个人用的需要代理的网址
-# 个人的密码库
-# DOMAIN,vaultwarden.starwish.top
 # 黑沼泽小说和后花园小说
-DOMAIN-SUFFIX,zhaoze.vip
+DOMAIN-SUFFIX,zhaoze.net
 DOMAIN-SUFFIX,houhuayuan.vip
 # 这两个是国外小黄油下载网站
 DOMAIN-SUFFIX,anime-sharing.com
