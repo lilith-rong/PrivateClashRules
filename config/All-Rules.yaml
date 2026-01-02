@@ -245,7 +245,7 @@ proxy-groups:
     proxies:
       - DIRECT
     include-all: true
-    filter: (?i)N3700|家
+    filter: (?i)N3700|回家
   - name: 🛑 过滤黑名单
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AdBlack.png
     type: select
