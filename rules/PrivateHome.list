@@ -1,5 +1,4 @@
 ##这里是个人家里云的相关服务
-DOMAIN-SUFFIX,freepbx.starwish.top
-IP-CIDR,10.0.0.3/32
-PROCESS-NAME,linphone.exe
-PROCESS-NAME,org.linphone
+# IP-CIDR,10.0.0.3/32
+# PROCESS-NAME,linphone.exe
+# PROCESS-NAME,org.linphone
