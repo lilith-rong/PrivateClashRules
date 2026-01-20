@@ -11,3 +11,5 @@ DOMAIN-SUFFIX,sbdm.net
 DOMAIN-SUFFIX,shuzijumin.com
 # Android pif generation
 DOMAIN,developer.android.com
+# 提供家宽代理的服务商
+DOMAIN-SUFFIX,webshare.io
