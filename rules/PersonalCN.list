@@ -1,0 +1,17 @@
+######################
+##   WIFI Calling   ##
+######################
+
+# 通用wifi calling
+DOMAIN-SUFFIX,mcc460.pub.3gppnetwork.org
+
+# google rcs
+# DOMAIN,rcs-acs-mcc460.jibe.google.com
+DOMAIN-KEYWORD,mcc460
+
+######################
+####    Other     ####
+######################
+
+# 中国农业银行 安卓
+PROCESS-NAME,com.android.bankabc
