@@ -1,0 +1,12 @@
+######################
+##   WIFI Calling   ##
+######################
+
+# 通用wifi calling
+DOMAIN-SUFFIX,mcc440.pub.3gppnetwork.org
+DOMAIN-SUFFIX,mcc441.pub.3gppnetwork.org
+# google rcs
+# DOMAIN,rcs-acs-mcc440.jibe.google.com
+# DOMAIN,rcs-acs-mcc441.jibe.google.com
+DOMAIN-KEYWORD,mcc440
+DOMAIN-KEYWORD,mcc441

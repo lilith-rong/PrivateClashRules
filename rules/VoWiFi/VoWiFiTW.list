@@ -1,0 +1,10 @@
+# 台湾
+######################
+##   WIFI Calling   ##
+######################
+
+# 通用wifi calling(AIS)
+DOMAIN-SUFFIX,mcc466.pub.3gppnetwork.org
+# google rcs
+# DOMAIN,rcs-acs-mcc466.jibe.google.com
+DOMAIN-KEYWORD,mcc466

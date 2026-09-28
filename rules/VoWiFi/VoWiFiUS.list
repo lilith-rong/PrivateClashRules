@@ -1,11 +1,13 @@
 ######################
 ##   WIFI Calling   ##
 ######################
+
 # AT&A
 DOMAIN-SUFFIX,epdg.epc.att.net
 DOMAIN-SUFFIX,sentitlement2.mobile.att.net
 DOMAIN-SUFFIX,vmm.mobile.att.net
 DOMAIN-SUFFIX,mmsc.mobile.att.net
+
 # T-Mobile/Ultramobile/tello
 # > 注：1.代理线路需支持UDP 2.最好为美国线路IPLC
 DOMAIN-SUFFIX,tello.com
@@ -14,6 +16,7 @@ DOMAIN-SUFFIX,t-mobile.idemia.io
 IP-CIDR,66.94.0.0/19,no-resolve
 IP-CIDR,206.29.177.36/32,no-resolve
 IP-CIDR,208.54.0.0/16,no-resolve
+
 # Verizon
 DOMAIN-SUFFIX,wo.vzwwo.com
 DOMAIN-SUFFIX,sg.vzwfemto.com
@@ -21,6 +24,7 @@ DOMAIN-KEYWORD, t-mobile
 DOMAIN-SUFFIX,optimizely.com
 DOMAIN-SUFFIX,redirect.ultra.me
 DOMAIN-SUFFIX,ultramobile.com
+
 # Helium
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,magic.link
@@ -29,6 +33,7 @@ DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,statuspage.io
 DOMAIN-SUFFIX,appsflyersdk.com
 DOMAIN-SUFFIX,appcenter.ms
+
 # talkatone
 DOMAIN-SUFFIX,mobilefuse.com
 DOMAIN-SUFFIX,inmobi.com
@@ -59,8 +64,4 @@ DOMAIN-KEYWORD,mcc310
 DOMAIN-KEYWORD,mcc311
 DOMAIN-KEYWORD,mcc313
 DOMAIN-KEYWORD,mcc316
-
-######################
-####    Other     ####
-######################
 

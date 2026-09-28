@@ -1,4 +1,4 @@
-##这里是WIFI CALLING(VoWIFI)的相关规则##
+##这里是WIFI CALLING(VoWIFI)的相关兜底规则##
 
 ## 苹果定位的域名 ##
 DOMAIN,gspe1-ssl.ls.apple.com

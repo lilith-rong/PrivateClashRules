@@ -7,8 +7,4 @@
 DOMAIN-SUFFIX,mcc502.pub.3gppnetwork.org
 # google rcs
 # DOMAIN,rcs-acs-mcc502.jibe.google.com
-DOMAIN-KEYWORD,mcc502
-
-######################
-####    Other     ####
-######################
+DOMAIN-KEYWORD,mcc502、

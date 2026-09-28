@@ -1,0 +1,5 @@
+##这里是fakeip-filter-VoWiFi的一些域名##
+## 对应的域名不走fakeip，因为似乎走fakeip会出奇奇怪怪的问题
+DOMAIN-SUFFIX,pub.3gppnetwork.org
+DOMAIN-WILDCARD,ims.*
+DOMAIN-WILDCARD,*.ims

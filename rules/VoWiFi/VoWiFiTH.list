@@ -10,7 +10,3 @@ IP-CIDR,119.31.0.0/17,no-resolve
 # google rcs
 # DOMAIN,rcs-acs-mcc520.jibe.google.com
 DOMAIN-KEYWORD,mcc520
-
-######################
-####    Other     ####
-######################

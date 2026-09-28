@@ -1,3 +1,4 @@
+# 新西兰
 ######################
 ##   WIFI Calling   ##
 ######################
@@ -11,7 +12,3 @@ DOMAIN-SUFFIX,mcc530.pub.3gppnetwork.org
 # google rcs
 # DOMAIN,rcs-acs-mcc530.jibe.google.com
 DOMAIN-KEYWORD,mcc530
-
-######################
-####    Other     ####
-######################

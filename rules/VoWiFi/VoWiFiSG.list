@@ -1,0 +1,9 @@
+######################
+##   WIFI Calling   ##
+######################
+
+# 通用wifi calling
+DOMAIN-SUFFIX,mcc525.pub.3gppnetwork.org
+# google rcs
+# DOMAIN,rcs-acs-mcc525.jibe.google.com
+DOMAIN-KEYWORD,mcc525

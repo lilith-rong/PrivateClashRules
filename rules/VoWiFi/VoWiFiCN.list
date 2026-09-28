@@ -5,13 +5,6 @@
 # 通用wifi calling
 DOMAIN-SUFFIX,mcc460.pub.3gppnetwork.org
 
-# google rcs
+# google rcs 中国给这玩意禁止访问了，并且本身就不支持rcs，后续考虑是否又解决方案
 # DOMAIN,rcs-acs-mcc460.jibe.google.com
 DOMAIN-KEYWORD,mcc460
-
-######################
-####    Other     ####
-######################
-
-# 中国农业银行 安卓
-PROCESS-NAME,com.android.bankabc
